@@ -1,0 +1,32 @@
+{
+  "name": "angular-elevate-zoom",
+  "version": "1.0.3",
+  "authors": [
+    "Miquel Martín"
+  ],
+  "description": "Angular Elevated Zoom jquery wrapper",
+  "main": "dist/angular-elevate-zoom.min.js",
+  "keywords": [
+    "angular",
+    "image-zoom",
+    "zoom",
+    "image",
+    "picture",
+    "picture-zoom",
+    "elevate",
+    "elevate-zoom"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/appfeel/angular-elevate-zoom",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "elevatezoom": "https://github.com/elevateweb/elevatezoom.git#~2.2.3"
+  }
+}

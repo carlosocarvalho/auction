@@ -1,0 +1,42 @@
+{
+  "name": "angular-export-table",
+  "version": "0.2.0",
+  "authors": [
+    "epotignano <epotignano@gmail.com>"
+  ],
+  "description": "directive that allows us to export HTML tables",
+  "main": [
+      "export/table-export-directive.js",
+      "export/table-export-option-directive.js",
+      "kayalshri-table-export.jquery.plugin-a891806/table-export.js",
+      "kayalshri-table-export.jquery.plugin-a891806/jquery.base64.js",
+      "kayalshri-table-export.jquery.plugin-a891806/html2canvas.js",
+      "kayalshri-table-export.jquery.plugin-a891806/jspdf/jspdf.js",
+      "kayalshri-table-export.jquery.plugin-a891806/jspdf/libs/base64.js",
+      "kayalshri-table-export.jquery.plugin-a891806/jspdf/libs/sprintf.js"
+  ],
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals"
+  ],
+  "keywords": [
+    "Angular",
+    "tables",
+    "HTML",
+    "table",
+    "export"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.4.0",
+    "angular-smart-table": "~2.1.3"
+  }
+}

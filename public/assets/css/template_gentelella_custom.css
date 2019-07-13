@@ -1,0 +1,136 @@
+.page-title .title_right .pull-right {
+    margin: 5px 0 !important;
+}
+
+.x_panel_custom {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0px 5px !important;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #E6E9ED;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    opacity: 1;
+    transition: all .2s ease;
+}
+
+.x_content_custom {
+    /*padding-left:17px !important; 
+    padding-right:17px !important; */
+}
+
+.accordeon{
+    padding: 10px
+}
+
+.panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group {
+     border-top: 0px solid #ddd !important; 
+      border-bottom: 0px solid #ddd !important; 
+}
+
+.panel-body{
+    padding-top:0px !important;
+    padding-bottom:5px !important;
+}
+
+.panel-heading{
+    padding-bottom: 0px !important;
+}
+
+.select_custom {
+    border: 1px solid #ccc;
+    border-radius: 0;
+    /*-webkit-appearance: none;*/
+ 
+   
+    
+}
+
+
+select:not([multiple]){
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    background-position:right 50%;
+    background-repeat:no-repeat;
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZFNDEwNjlGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZFNDEwNkFGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NkU0MTA2N0Y3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NkU0MTA2OEY3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuGsgwQAAAA5SURBVHjaYvz//z8DOYCJgUxAf42MQIzTk0D/M+KzkRGPoQSdykiKJrBGpOhgJFYTWNEIiEeAAAMAzNENEOH+do8AAAAASUVORK5CYII=);
+    padding: .5em;
+    padding-right:1.5em;
+}
+
+.datetimepicker .table td, .datetimepicker .table th {
+    border: 0;
+     border-radius: 0px; 
+    height: 20px;
+    text-align: center;
+}
+
+
+.xdisplay {
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 4px;
+    width: 322px !important;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+}
+
+.datetimepicker .table td, .datetimepicker .table th {
+    border: 0;
+     border-radius: 0px !important; 
+    height: 20px;
+    text-align: center;
+}
+
+.datetimepicker .table td, .datetimepicker .table th {
+    border: 0;
+    border-radius: 4px;
+    height: 19px;
+    text-align: center;
+    width: 20px !important;
+}
+
+.datetimepicker .active {
+    background-color: #536A7F !important;
+    color: #fff;
+}
+
+.datetimepicker .active, .datetimepicker .active:hover, .datetimepicker .active.disabled, .datetimepicker .active.disabled:hover {
+     background: #536A7F !important;
+    /* background-image: linear-gradient(to bottom, #0088cc, #0044cc); */
+    background-repeat: repeat-x;
+    border-color: #0044cc #0044cc #002a80;
+    color: #ffffff;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#08c', endColorstr='#04c', GradientType=0);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.datetimepicker .day:hover, .datetimepicker .switch:hover, .datetimepicker .left:hover, .datetimepicker .right:hover {
+    background: #eeeeee;
+    color: #73879C;
+    cursor: pointer;
+}
+
+.dropdown-menu-calendar {
+    background-color: transparent !important;
+    border: none !important;
+
+
+}
+
+.no-margim-bottom{
+    margin-bottom: 0px !important;
+}
+
+/*.panel-group {
+     margin-bottom: 0px !important; 
+}*/
+
+.top-space-nav{
+    margin-top:10px;
+}

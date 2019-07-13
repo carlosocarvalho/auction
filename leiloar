@@ -1,0 +1,54 @@
+(node:12587) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+(node:25643) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+(node:25643) DeprecationWarning: crypto.pbkdf2 without specifying a digest is deprecated. Please specify a digest
+Error: invalid json
+    at parse (/root/leiloar/leiloar2_deploy/node_modules/body-parser/lib/types/json.js:60:15)
+    at /root/leiloar/leiloar2_deploy/node_modules/body-parser/lib/read.js:96:18
+    at IncomingMessage.onEnd (/root/leiloar/leiloar2_deploy/node_modules/raw-body/index.js:136:7)
+    at IncomingMessage.g (events.js:286:16)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:926:12)
+    at _combinedTickCallback (internal/process/next_tick.js:74:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:122:9)
+Error: invalid json
+    at parse (/root/leiloar/leiloar2_deploy/node_modules/body-parser/lib/types/json.js:60:15)
+    at /root/leiloar/leiloar2_deploy/node_modules/body-parser/lib/read.js:96:18
+    at IncomingMessage.onEnd (/root/leiloar/leiloar2_deploy/node_modules/raw-body/index.js:136:7)
+    at IncomingMessage.g (events.js:286:16)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:926:12)
+    at _combinedTickCallback (internal/process/next_tick.js:74:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:122:9)
+Error: invalid json
+    at parse (/root/leiloar/leiloar2_deploy/node_modules/body-parser/lib/types/json.js:60:15)
+    at /root/leiloar/leiloar2_deploy/node_modules/body-parser/lib/read.js:96:18
+    at IncomingMessage.onEnd (/root/leiloar/leiloar2_deploy/node_modules/raw-body/index.js:136:7)
+    at IncomingMessage.g (events.js:286:16)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:926:12)
+    at _combinedTickCallback (internal/process/next_tick.js:74:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:122:9)
+(node:2731) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+Error: invalid json
+    at parse (/root/leiloar/leiloar2_deploy/node_modules/body-parser/lib/types/json.js:60:15)
+    at /root/leiloar/leiloar2_deploy/node_modules/body-parser/lib/read.js:96:18
+    at IncomingMessage.onEnd (/root/leiloar/leiloar2_deploy/node_modules/raw-body/index.js:136:7)
+    at IncomingMessage.g (events.js:286:16)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:926:12)
+    at _combinedTickCallback (internal/process/next_tick.js:74:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:122:9)
+Error: invalid json
+    at parse (/root/leiloar/leiloar2_deploy/node_modules/body-parser/lib/types/json.js:60:15)
+    at /root/leiloar/leiloar2_deploy/node_modules/body-parser/lib/read.js:96:18
+    at IncomingMessage.onEnd (/root/leiloar/leiloar2_deploy/node_modules/raw-body/index.js:136:7)
+    at IncomingMessage.g (events.js:286:16)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:926:12)
+    at _combinedTickCallback (internal/process/next_tick.js:74:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:122:9)

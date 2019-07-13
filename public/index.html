@@ -1,0 +1,500 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <!--
+  <meta http-equiv=3D"Content-Type" content=3D"text/html>
+  -->
+  <!--
+  <meta http-equiv="X-UA-Compatible",3D"Content-Type"  content=3D"text/html,"IE=edge">
+  -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <base href="/">
+  <title>Leiloar</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
+   
+
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(client) app/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.css" />
+  <link rel="stylesheet" href="bower_components/angular-ui-tree/dist/angular-ui-tree.min.css" />
+  <link rel="stylesheet" href="bower_components/bootstrap-star-rating/css/star-rating.min.css" />
+  <link rel="stylesheet" href="bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.css" />
+  <link rel="stylesheet" href="bower_components/textAngular/dist/textAngular.css" />
+  <link rel="stylesheet" href="bower_components/angular-bootstrap-calendar/dist/css/angular-bootstrap-calendar.css" />
+  <link rel="stylesheet" href="bower_components/angular-wizard/dist/angular-wizard.min.css" />
+  <link rel="stylesheet" href="bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css" />
+  <link rel="stylesheet" href="bower_components/dropzone/dist/min/dropzone.min.css" />
+  <link rel="stylesheet" href="bower_components/angular-image-zoom/dist/image-zoom.css" />
+  <link rel="stylesheet" href="bower_components/glyphicons/styles/glyphicons.css" />
+  <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css" />
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+  <link rel="stylesheet" href="bower_components/angularjs-slider/dist/rzslider.css" />
+  <link rel="stylesheet" href="bower_components/angular-material-datetimepicker/css/material-datetimepicker.min.css" />
+  <link rel="stylesheet" href="bower_components/mdPickers/dist/mdPickers.min.css" />
+  <link rel="stylesheet" href="bower_components/angular-carousel/dist/angular-carousel.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css({.tmp,client}) app/app.css -->
+  <!--<link rel="stylesheet" href="../bower_components/gentelella/build/css/custom.min.css" />-->
+
+
+  <!--<link rel="stylesheet" href="app/app.css">-->
+  
+  <!-- injector:css -->
+  <link rel="stylesheet" href="app/account/activate/activate.css">
+  <link rel="stylesheet" href="app/account/login/login.css">
+  <link rel="stylesheet" href="app/admin/client/client.css">
+  <link rel="stylesheet" href="app/admin/client/directives/clientAdd/clientAdd.css">
+  <link rel="stylesheet" href="app/admin/client/directives/clientBaseInfo/clientBaseInfo.css">
+  <link rel="stylesheet" href="app/admin/main/main.css">
+  <link rel="stylesheet" href="app/admin/staff/staff.css">
+  <link rel="stylesheet" href="app/animate.css">
+  <link rel="stylesheet" href="app/app.css">
+  <link rel="stylesheet" href="app/role/role.css">
+  <link rel="stylesheet" href="components/modal/modal.css">
+  <!-- endinjector -->
+  
+  <!-- endbuild -->
+  <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css" />
+
+  <!--<link rel="stylesheet" href="bower_components/angular-bootstrap-datetimepicker/src/css/datetimepicker.css"/>-->
+
+
+<!--<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+<link href="assets/css/responsive.css" rel="stylesheet"  type="text/css">-->
+   <!--<link rel="stylesheet" href="bower_components/gentelella/build/css/custom.min.css" />-->
+
+   <!--<link href="app/public_style.css" rel="stylesheet" type="text/css">-->
+   <!--<link href="app/public_style_responsive.css" rel="stylesheet" type="text/css">-->
+<!--<link href="app/public_style_custom.css" rel="stylesheet" type="text/css">-->
+<!--<link href="app/public_style_custom_tabs.css" rel="stylesheet" type="text/css">-->
+  
+</head>
+<body ng-app="leiloar2" class="nav-md">
+
+
+
+  <!--[if lt IE 7]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div ui-view></div>
+
+  <script src="bower_components/js-xlsx/dist/jszip.js"></script>
+   <!--<script src='//maps.googleapis.com/maps/api/js?key=AIzaSyCK32WY5y9Czq9YypKAgsPnk7vT8l1mJo8'></script>-->
+
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-51413599-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <!--<link cloudfront: loader-scripts>-->
+  <script type="text/javascript" async
+  src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/a5a2b8d3-d1ed-44dd-ab2c-b48a766fa93d-loader.js"></script>
+
+  <!-- Java script#3D: change be your site -->
+  <script type=3D"text/javascript" async =
+    src=3D"https://d335luupugsy2.cloudfront.net/js/loader-scripts/a5a2b8d3-d1=
+    ed-44dd-ab2c-b48a766fa93d-loader.js =
+    <http://t.email.rdstation.com.br/wf/click?upn=3DGlCdGrEn9kGh0ig7SrPzUL8Md=
+    abh3u-2F-2FxRgilWWkKPeebAskEYJHx7TKAaJFczkc77Cce1-2BqNZ7i9HamfWuYqAGwkC26=
+    6-2B8m3Ut7hGcuysXg2PJyX3Uv9tZj-2Bu4cElZliCUlXcMZhv29neFprAGF3A-3D-3D_0l-2=
+    BzjOOTOLV6h5ItAfXLPwN-2BnVf4wvDJMgymSzxsA8o9T86dGo-2B7jtAokvSzFTg5VQb2COW=
+    HE3ymG1cbN3sK50usboIcnPV2MDbAE1kt7IJqTXUAZmn7-2B-2Bj7uE0YQA15T2-2BwXRhRL-=
+    2FkeHgB-2BFTL4bAgzehQ-2BPjiGyypAKfvtihcGgmSuUZJn5MRWuTpxsarYAxlISSVhAyvkQ=
+   5CpKqCoCi7VjxrKMCbds-2FT23SzNKDY-3D> "></script>
+
+   <!-- Uol: change be your site -->
+   <!--
+   <http://t.email.rdstation.com.br/wf/click?upn=3Do2OOmDf1-2FvtLsTVbLPOxEeh=
+    la24om-2BEbP52ldTx2zQ71Fz-2BPw9DlCj-2FAOprlZ4cW_0l-2BzjOOTOLV6h5ItAfXLPwN=
+    -2BnVf4wvDJMgymSzxsA8q5-2BA7fMJDUYt12T-2F5a-2FOPomXnljCMqU-2BgcL9ai3iyIly=
+    jDdwigTZN6XUcYJySzbFd61mfRdSgn5q3iTiUVuA3Yqf-2BKlk5-2FYnTpx4IPbQhsal9u6Xv=
+    odpTTvXYx9SVqdNxNwd8Aj5Ofs-2BpjtPvyOZU0UemgW5NWDO2rnfpIW98ztLvJRhe72PvV1U=
+    LOv2Hyrz0-3D>
+    -->
+
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+      <!--<script src="bower_components/moment/locale/pt-br.js"></script>-->
+  <!--[if lt IE 9]>
+  <script src="bower_components/es5-shim/es5-shim.js"></script>
+  <script src="bower_components/json3/lib/json3.min.js"></script>
+  <![endif]-->
+  <!-- build:js({client,node_modules}) app/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/moment/min/moment-with-locales.min.js"></script>
+  <script src="bower_components/fullcalendar/dist/fullcalendar.js"></script>
+  <script src="bower_components/angular-ui-calendar/src/calendar.js"></script>
+  <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+  <script src="bower_components/angular-ui-sortable/sortable.js"></script>
+  <script src="bower_components/angular-ui-tree/dist/angular-ui-tree.js"></script>
+  <script src="bower_components/bootstrap-star-rating/js/star-rating.min.js"></script>
+  <script src="bower_components/checklist-model/checklist-model.js"></script>
+  <script src="bower_components/lodash/lodash.js"></script>
+  <script src="bower_components/ng-file-upload/angular-file-upload.js"></script>
+  <script src="bower_components/ng-file-upload-shim/angular-file-upload-shim.js"></script>
+  <script src="bower_components/seiyria-bootstrap-slider/js/bootstrap-slider.js"></script>
+  <script src="bower_components/rangy/rangy-core.js"></script>
+  <script src="bower_components/rangy/rangy-classapplier.js"></script>
+  <script src="bower_components/rangy/rangy-highlighter.js"></script>
+  <script src="bower_components/rangy/rangy-selectionsaverestore.js"></script>
+  <script src="bower_components/rangy/rangy-serializer.js"></script>
+  <script src="bower_components/rangy/rangy-textrange.js"></script>
+  <script src="bower_components/textAngular/dist/textAngular.js"></script>
+  <script src="bower_components/textAngular/dist/textAngular-sanitize.js"></script>
+  <script src="bower_components/textAngular/dist/textAngularSetup.js"></script>
+  <script src="bower_components/angular-confirm-modal/angular-confirm.js"></script>
+  <script src="bower_components/angular-locale-pt-br/angular-locale_pt-br.js"></script>
+  <script src="bower_components/angular-autogrow/angular-autogrow.min.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-moment/angular-moment.js"></script>
+  <script src="bower_components/angular-pinch-zoom/dist/ng-pinch-zoom.js"></script>
+  <script src="bower_components/angular-drag-and-drop-lists/angular-drag-and-drop-lists.js"></script>
+  <script src="bower_components/angular-simple-logger/dist/angular-simple-logger.js"></script>
+  <script src="bower_components/markerclustererplus/src/markerclusterer.js"></script>
+  <script src="bower_components/google-maps-utility-library-v3-markerwithlabel/dist/markerwithlabel.js"></script>
+  <script src="bower_components/google-maps-utility-library-v3-infobox/dist/infobox.js"></script>
+  <script src="bower_components/google-maps-utility-library-v3-keydragzoom/dist/keydragzoom.js"></script>
+  <script src="bower_components/js-rich-marker/src/richmarker.js"></script>
+  <script src="bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
+  <script src="bower_components/angular-bootstrap-calendar/dist/js/angular-bootstrap-calendar-tpls.js"></script>
+  <script src="bower_components/angular-wizard/dist/angular-wizard.min.js"></script>
+  <script src="bower_components/bootstrap-switch/dist/js/bootstrap-switch.js"></script>
+  <script src="bower_components/angular-bootstrap-switch/dist/angular-bootstrap-switch.js"></script>
+  <script src="bower_components/dropzone/dist/min/dropzone.min.js"></script>
+  <script src="bower_components/ng-dropzone/dist/ng-dropzone.js"></script>
+  <script src="bower_components/ionic-rating/ionic-rating.js"></script>
+  <script src="bower_components/angular-socket-io/socket.js"></script>
+  <script src="bower_components/angular-image-zoom/dist/image-zoom.js"></script>
+  <script src="bower_components/humanize-duration/humanize-duration.js"></script>
+  <script src="bower_components/angular-timer/dist/angular-timer.js"></script>
+  <script src="bower_components/angular-translate/angular-translate.js"></script>
+  <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+  <script src="bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
+  <script src="bower_components/angular-translate-storage-local/angular-translate-storage-local.js"></script>
+  <script src="bower_components/angular-translate-handler-log/angular-translate-handler-log.js"></script>
+  <script src="bower_components/angular-dynamic-locale/src/tmhDynamicLocale.js"></script>
+  <script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+  <script src="bower_components/angular-ui-mask/dist/mask.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-messages/angular-messages.js"></script>
+  <script src="bower_components/angular-material/angular-material.js"></script>
+  <script src="bower_components/angularjs-slider/dist/rzslider.js"></script>
+  <script src="bower_components/angular-input-masks/angular-input-masks-standalone.js"></script>
+  <script src="bower_components/momentjs/moment.js"></script>
+  <script src="bower_components/angular-material-datetimepicker/js/angular-material-datetimepicker.min.js"></script>
+  <script src="bower_components/mdPickers/dist/mdPickers.min.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.js"></script>
+  <script src="bower_components/angular-carousel/dist/angular-carousel.js"></script>
+  <script src="bower_components/angular-socialshare/dist/angular-socialshare.min.js"></script>
+  <script src="bower_components/pdfmake/build/pdfmake.js"></script>
+  <script src="bower_components/pdfmake/build/vfs_fonts.js"></script>
+  <script src="bower_components/angular-elevate-zoom/dist/angular-elevate-zoom.min.js"></script>
+  <script src="bower_components/js-xlsx/dist/xlsx.js"></script>
+  <script src="bower_components/angular-js-xlsx/angular-js-xlsx.js"></script>
+  <script src="bower_components/xlsx/xlsx.js"></script>
+  <!-- endbower -->
+  <!-- <script type="text/javascript" src="bower_components/gentelella/build/js/custom.js"></script> -->
+
+
+
+  
+  <script type="text/javascript" src="bower_components/angular-bootstrap-datetimepicker/src/js/datetimepicker.js"></script>
+  <script type="text/javascript" src="bower_components/angular-bootstrap-datetimepicker/src/js/datetimepicker.templates.js"></script>
+
+  <script type="text/javascript" src="bower_components/angular-date-time-input/src/dateTimeInput.js"></script>
+
+    <script src="bower_components/elevatezoom/jquery.elevatezoom.js"></script>
+
+    
+
+  <!-- endbuild -->
+  <!--<script src="bower_components/bootstrap/js/modal.js"></script>-->
+
+  <script src="/socket.io/socket.io.js"></script>
+ 
+  
+  <!-- build:js({.tmp,client}) app/app.js -->
+  <script src="app/app.js"></script>
+
+
+  <!-- tags:js 
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51413599-1', 'auto');
+  ga('send', 'pageview');
+
+ </script>
+  -->
+
+  <!-- injector:js -->
+  <script src="app/account/account.js"></script>
+  <script src="app/account/activate/activate.controller.js"></script>
+  <script src="app/account/forgot/forgot.controller.js"></script>
+  <script src="app/account/forgot/forgotSave.controller.js"></script>
+  <script src="app/account/login/login.controller.js"></script>
+  <script src="app/account/profile/profile.controller.js"></script>
+  <script src="app/account/settings/settings.controller.js"></script>
+  <script src="app/account/signup/signup.controller.js"></script>
+  <script src="app/admin/AdminCtrl.js"></script>
+  <script src="app/admin/banner/banner-add.controller.js"></script>
+  <script src="app/admin/banner/banner.controller.js"></script>
+  <script src="app/admin/banner/banner.js"></script>
+  <script src="app/admin/banner/banner.service.js"></script>
+  <script src="app/admin/boleto/boleto-add.controller.js"></script>
+  <script src="app/admin/boleto/boleto.controller.js"></script>
+  <script src="app/admin/boleto/boleto.js"></script>
+  <script src="app/admin/boleto/boleto.service.js"></script>
+  <script src="app/admin/categorie/categorie-add.controller.js"></script>
+  <script src="app/admin/categorie/categorie.controller.js"></script>
+  <script src="app/admin/categorie/categorie.js"></script>
+  <script src="app/admin/categorie/categorie.service.js"></script>
+  <script src="app/admin/client/Client.service.js"></script>
+  <script src="app/admin/client/client-add.controller.js"></script>
+  <script src="app/admin/client/client.controller.js"></script>
+  <script src="app/admin/client/client.js"></script>
+  <script src="app/admin/client/directives/clientAdd/clientAdd.js"></script>
+  <script src="app/admin/client/directives/clientBaseInfo/clientBaseInfo.js"></script>
+  <script src="app/admin/comitente/comitente-add.controller.js"></script>
+  <script src="app/admin/comitente/comitente.controller.js"></script>
+  <script src="app/admin/comitente/comitente.js"></script>
+  <script src="app/admin/comitente/comitente.service.js"></script>
+  <script src="app/admin/condicao-venda/condicao-venda-add.controller.js"></script>
+  <script src="app/admin/condicao-venda/condicao-venda.controller.js"></script>
+  <script src="app/admin/condicao-venda/condicao-venda.js"></script>
+  <script src="app/admin/condicao-venda/condicao-venda.service.js"></script>
+  <script src="app/admin/crm/book/book-add.controller.js"></script>
+  <script src="app/admin/crm/book/book-view.controller.js"></script>
+  <script src="app/admin/crm/book/book.controller.js"></script>
+  <script src="app/admin/crm/book/book.service.js"></script>
+  <script src="app/admin/crm/contato/atendimento.controller.js"></script>
+  <script src="app/admin/crm/contato/contato-add.controller.js"></script>
+  <script src="app/admin/crm/contato/contato.controller.js"></script>
+  <script src="app/admin/crm/contato/contato.service.js"></script>
+  <script src="app/admin/crm/contato/import.controller.js"></script>
+  <script src="app/admin/crm/crm.js"></script>
+  <script src="app/admin/crm/mailing/mailing-view.controller.js"></script>
+  <script src="app/admin/crm/mailing/mailing.controller.js"></script>
+  <script src="app/admin/crm/mailing/mailing.service.js"></script>
+  <script src="app/admin/email/email-responder.controller.js"></script>
+  <script src="app/admin/email/email.controller.js"></script>
+  <script src="app/admin/email/email.js"></script>
+  <script src="app/admin/email/email.service.js"></script>
+  <script src="app/admin/endereco/enderecoCtrl.js"></script>
+  <script src="app/admin/grupo/grupo-add.controller.js"></script>
+  <script src="app/admin/grupo/grupo.controller.js"></script>
+  <script src="app/admin/grupo/grupo.js"></script>
+  <script src="app/admin/grupo/grupo.service.js"></script>
+  <script src="app/admin/image/imageCtrl.js"></script>
+  <script src="app/admin/imprensa/imprensa-add.controller.js"></script>
+  <script src="app/admin/imprensa/imprensa.controller.js"></script>
+  <script src="app/admin/imprensa/imprensa.js"></script>
+  <script src="app/admin/imprensa/imprensa.service.js"></script>
+  <script src="app/admin/leilao/leilao-add-visitante.controller.js"></script>
+  <script src="app/admin/leilao/leilao-add.controller.js"></script>
+  <script src="app/admin/leilao/leilao-lote-import-controller.js"></script>
+  <script src="app/admin/leilao/leilao.controller.js"></script>
+  <script src="app/admin/leilao/leilao.js"></script>
+  <script src="app/admin/leilao/leilao.service.js"></script>
+  <script src="app/admin/leilao/leilaoLoteAdd.controller.js"></script>
+  <script src="app/admin/lote/lote-add.controller.js"></script>
+  <script src="app/admin/lote/lote-detail-edit.controller.js"></script>
+  <script src="app/admin/lote/lote-detail-public.controller.js"></script>
+  <script src="app/admin/lote/lote-detail-venda.controller.js"></script>
+  <script src="app/admin/lote/lote-detail.controller.js"></script>
+  <script src="app/admin/lote/lote-import-controller.js"></script>
+  <script src="app/admin/lote/lote.controller.js"></script>
+  <script src="app/admin/lote/lote.js"></script>
+  <script src="app/admin/lote/lote.service.js"></script>
+  <script src="app/admin/main/calculator.controller.js"></script>
+  <script src="app/admin/main/main.controller.js"></script>
+  <script src="app/admin/main/main.js"></script>
+  <script src="app/admin/news/news-add.controller.js"></script>
+  <script src="app/admin/news/news-import-controller.js"></script>
+  <script src="app/admin/news/news-preview-controller.js"></script>
+  <script src="app/admin/news/news.controller.js"></script>
+  <script src="app/admin/news/news.js"></script>
+  <script src="app/admin/news/news.service.js"></script>
+  <script src="app/admin/prestacao/Prestacao.service.js"></script>
+  <script src="app/admin/prestacao/clone.controller.js"></script>
+  <script src="app/admin/prestacao/contraProposta.controller.js"></script>
+  <script src="app/admin/prestacao/prestacao-baixa.controller.js"></script>
+  <script src="app/admin/prestacao/prestacao-confirmar-pagamento.controller.js"></script>
+  <script src="app/admin/prestacao/prestacao-desistencia.controller.js"></script>
+  <script src="app/admin/prestacao/prestacao-nota.controller.js"></script>
+  <script src="app/admin/prestacao/prestacao-pacote.controller.js"></script>
+  <script src="app/admin/prestacao/prestacao-previa.controller.js"></script>
+  <script src="app/admin/prestacao/prestacao-propostas.controller.js"></script>
+  <script src="app/admin/prestacao/prestacao.controller.js"></script>
+  <script src="app/admin/prestacao/prestacao.js"></script>
+  <script src="app/admin/prestacao/prestacaoAddComprador.controller.js"></script>
+  <script src="app/admin/prestacao/prestacaoCondicional.controller.js"></script>
+  <script src="app/admin/prestacao/prestacaoConfirmBaixa.controller.js"></script>
+  <script src="app/admin/prestacao/selecionar-comitentes.controller.js"></script>
+  <script src="app/admin/prestacao/vendaDireta/prestacao-baixa.controller.js"></script>
+  <script src="app/admin/prestacao/vendaDireta/prestacao-propostas.controller.js"></script>
+  <script src="app/admin/prestacao/vendaDireta/prestacao.controller.js"></script>
+  <script src="app/admin/prestacao/vendaDireta/prestacao.js"></script>
+  <script src="app/admin/prestacao/vendaDireta/prestacao.service.js"></script>
+  <script src="app/admin/relatorio/relatorio.controller.js"></script>
+  <script src="app/admin/relatorio/relatorio.js"></script>
+  <script src="app/admin/relatorio/relatorio.modal.controller.js"></script>
+  <script src="app/admin/relatorio/relatorio.service.js"></script>
+  <script src="app/admin/staff/staff-add.controller.js"></script>
+  <script src="app/admin/staff/staff.controller.js"></script>
+  <script src="app/admin/staff/staff.js"></script>
+  <script src="app/admin/staff/staff.service.js"></script>
+  <script src="app/admin/suporte/Chamado.service.js"></script>
+  <script src="app/admin/suporte/chamado-view.controller.js"></script>
+  <script src="app/admin/suporte/chamado.controller.js"></script>
+  <script src="app/admin/suporte/chamado.js"></script>
+  <script src="app/admin/taxa/taxa-add.controller.js"></script>
+  <script src="app/admin/taxa/taxa.controller.js"></script>
+  <script src="app/admin/taxa/taxa.js"></script>
+  <script src="app/admin/taxa/taxa.service.js"></script>
+  <script src="app/admin/usuario/usuario-add.controller.js"></script>
+  <script src="app/admin/usuario/usuario-historico.controller.js"></script>
+  <script src="app/admin/usuario/usuario-import-controller.js"></script>
+  <script src="app/admin/usuario/usuario-lock-unlock.controller.js"></script>
+  <script src="app/admin/usuario/usuario-view.controller.js"></script>
+  <script src="app/admin/usuario/usuario.controller.js"></script>
+  <script src="app/admin/usuario/usuario.js"></script>
+  <script src="app/admin/usuario/usuario.service.js"></script>
+  <script src="app/admin/vendaDireta/vendaDireta-add.controller.js"></script>
+  <script src="app/admin/vendaDireta/vendaDireta.controller.js"></script>
+  <script src="app/admin/vendaDireta/vendaDireta.js"></script>
+  <script src="app/admin/vendaDireta/vendaDireta.service.js"></script>
+  <script src="app/admin/vendaDireta/vendaDiretaLoteAdd.controller.js"></script>
+  <script src="app/constants.js"></script>
+  <script src="app/directives/LanguageSelectDirective.js"></script>
+  <script src="app/moment-timezone-data.js"></script>
+  <script src="app/ng-services/StaffService/StaffService.service.js"></script>
+  <script src="app/publico-comitente/AdminComitenteCtrl.js"></script>
+  <script src="app/publico-comitente/alterarsenha/alterarsenha.controller.js"></script>
+  <script src="app/publico-comitente/alterarsenha/alterarsenha.js"></script>
+  <script src="app/publico-comitente/leilao/leilao-view.controller.js"></script>
+  <script src="app/publico-comitente/leilao/leilao.controller.js"></script>
+  <script src="app/publico-comitente/leilao/leilao.js"></script>
+  <script src="app/publico-comitente/main/main.controller.js"></script>
+  <script src="app/publico-comitente/main/main.js"></script>
+  <script src="app/publico-comitente/meusdados/meusdados.controller.js"></script>
+  <script src="app/publico-comitente/meusdados/meusdados.js"></script>
+  <script src="app/publico-comitente/prestacao/prestacao-baixa.controller.js"></script>
+  <script src="app/publico-comitente/prestacao/prestacao-previa.controller.js"></script>
+  <script src="app/publico-comitente/prestacao/prestacao-propostas.controller.js"></script>
+  <script src="app/publico-comitente/prestacao/prestacao.controller.js"></script>
+  <script src="app/publico-comitente/prestacao/prestacao.js"></script>
+  <script src="app/publico/PublicCtrl.js"></script>
+  <script src="app/publico/cadastro/CadastroCtrl.js"></script>
+  <script src="app/publico/cadastro/cadastro.js"></script>
+  <script src="app/publico/cadastro/directives/infoArea/infoArea.js"></script>
+  <script src="app/publico/cadastro/directives/infoEndereco/infoEndereco.js"></script>
+  <script src="app/publico/cadastro/directives/infoFim/infoFim.js"></script>
+  <script src="app/publico/cadastro/directives/infoPessoais/infoPessoais.js"></script>
+  <script src="app/publico/clientes/clientes.js"></script>
+  <script src="app/publico/clientes/clientesCtrl.js"></script>
+  <script src="app/publico/email/email.controller.js"></script>
+  <script src="app/publico/email/email.js"></script>
+  <script src="app/publico/faleconosco/GeoCode.js"></script>
+  <script src="app/publico/faleconosco/faleConoscoCtrl.js"></script>
+  <script src="app/publico/faleconosco/faleconosco.js"></script>
+  <script src="app/publico/habilitar/HabilitarCtrl.js"></script>
+  <script src="app/publico/habilitar/HabilitarVendaCtrl.js"></script>
+  <script src="app/publico/historico/historico.controller.js"></script>
+  <script src="app/publico/historico/historico.js"></script>
+  <script src="app/publico/home/HomeCtrl.js"></script>
+  <script src="app/publico/home/home.js"></script>
+  <script src="app/publico/imprensa/imprensa.js"></script>
+  <script src="app/publico/imprensa/imprensaCtrl.js"></script>
+  <script src="app/publico/leilao/LeilaoCtrl.js"></script>
+  <script src="app/publico/leilao/leilao.js"></script>
+  <script src="app/publico/leiloesencerrados/leiloesencerrados.controller.js"></script>
+  <script src="app/publico/leiloesencerrados/leiloesencerrados.js"></script>
+  <script src="app/publico/lote/agedarVisitacao.controller.js"></script>
+  <script src="app/publico/lote/lote.js"></script>
+  <script src="app/publico/lote/loteCtrl.js"></script>
+  <script src="app/publico/lote/loteProposta.controller.js"></script>
+  <script src="app/publico/meusdados/meusDados.controller.js"></script>
+  <script src="app/publico/meusdados/meusDados.js"></script>
+  <script src="app/publico/notaarrematacao/notaarrematacao.controller.js"></script>
+  <script src="app/publico/painel/PainelCtrl.js"></script>
+  <script src="app/publico/painel/PainelDetailCtrl.js"></script>
+  <script src="app/publico/painel/painel.js"></script>
+  <script src="app/publico/pesquisar/pesquisar.controller.js"></script>
+  <script src="app/publico/pesquisar/pesquisar.js"></script>
+  <script src="app/publico/politicaseguranca/politicaSegurancaCtrl.js"></script>
+  <script src="app/publico/politicaseguranca/politicaseguranca.js"></script>
+  <script src="app/publico/posleiloes/posleiloes.controller.js"></script>
+  <script src="app/publico/posleiloes/posleiloes.js"></script>
+  <script src="app/publico/proximosleiloes/proximosleiloes.controller.js"></script>
+  <script src="app/publico/proximosleiloes/proximosleiloes.js"></script>
+  <script src="app/publico/quemsomos/quemSomosCtrl.js"></script>
+  <script src="app/publico/quemsomos/quemsomos.js"></script>
+  <script src="app/publico/querocomprar/querocomprar.controller.js"></script>
+  <script src="app/publico/querocomprar/querocomprar.js"></script>
+  <script src="app/publico/querovender/querovender.controller.js"></script>
+  <script src="app/publico/querovender/querovender.js"></script>
+  <script src="app/publico/recebanovidades/RecebaNovidadesCtrl.js"></script>
+  <script src="app/publico/venda/venda.js"></script>
+  <script src="app/publico/venda/vendaCtrl.js"></script>
+  <script src="app/publico/venda/vendaLoteProposta.controller.js"></script>
+  <script src="app/publico/venda/venda_detail.controller.js"></script>
+  <script src="app/publico/vendasdiretas/vendasdiretas.controllers.js"></script>
+  <script src="app/publico/vendasdiretas/vendasdiretas.js"></script>
+  <script src="app/resources/config.js"></script>
+  <script src="app/role/role.controller.js"></script>
+  <script src="app/role/role.js"></script>
+  <script src="app/role/role.service.js"></script>
+  <script src="app/services/CEP.js"></script>
+  <script src="app/services/Cidade.service.js"></script>
+  <script src="app/services/Dashboard.service.js"></script>
+  <script src="app/services/Estado.service.js"></script>
+  <script src="app/services/Image.js"></script>
+  <script src="app/services/LocaleService.js"></script>
+  <script src="app/services/Mail.js"></script>
+  <script src="app/services/Notification.service.js"></script>
+  <script src="app/services/Page.js"></script>
+  <script src="app/services/StringPatrern.js"></script>
+  <script src="app/services/Util.service.js"></script>
+  <script src="app/services/Validar.js"></script>
+  <script src="app/services/socket.service.js"></script>
+  <script src="components/auth/auth.service.js"></script>
+  <script src="components/auth/user.service.js"></script>
+  <script src="components/modal/modal.service.js"></script>
+  <script src="components/mongoose-error/mongoose-error.directive.js"></script>
+  <script src="components/navbar/navbar.controller.js"></script>
+  <script src="components/socket/socket.service.js"></script>
+  <!-- endinjector -->
+  <!-- endbuild -->
+  
+</body>
+</html>

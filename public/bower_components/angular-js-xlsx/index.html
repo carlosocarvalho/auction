@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular Js XLSX</title>
+</head>
+<body ng-app="MyApp">
+  <div ng-controller="myController">
+    <js-xlsx onread="read" onerror="error"></js-xlsx>
+  </div>
+
+  <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="bower_components/js-xlsx/dist/xlsx.core.min.js"></script>
+  <script type="text/javascript" src="angular-js-xlsx.js"></script>
+  <script type="text/javascript">
+    angular.module('MyApp', ['angular-js-xlsx'])
+    .controller('myController', function($scope) {
+      $scope.read = function (workbook) {
+        /* DO SOMETHING WITH workbook HERE */
+        for (var sheetName in workbook.Sheets) {
+          var jsonData = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName]);
+          console.log(jsonData);
+        }
+      }
+
+      $scope.error = function (e) {
+        /* DO SOMETHING WHEN ERROR IS THROWN */
+        console.log(e);
+      }
+    });
+  </script>
+</body>
+</html>

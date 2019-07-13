@@ -1,0 +1,14 @@
+{
+  "name": "xlsx",
+  "homepage": "https://github.com/stephen-hardy/xlsx.js",
+  "_release": "f867c9339e",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f867c9339e6789a0b08765137f5d161e0ae5e228"
+  },
+  "_source": "https://github.com/stephen-hardy/xlsx.js.git",
+  "_target": "*",
+  "_originalSource": "xlsx",
+  "_direct": true
+}

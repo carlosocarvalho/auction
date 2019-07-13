@@ -1,0 +1,17 @@
+{
+  "name": "angular-pinch-zoom",
+  "version": "0.2.1",
+  "description": "pinch-zoom directive for AngularJS",
+  "main": "dist/ng-pinch-zoom.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ktknest/angular-pinch-zoom"
+  },
+  "authors": "ktknest <katou.kennichi@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/ktknest/angular-pinch-zoom",
+  "ignore": [
+    "**/.*",
+    "node_modules"
+  ]
+}

@@ -1,0 +1,1 @@
+mongoimport --db qconnect-trip-dev --collection airports --csv --headerline --file airports.csv

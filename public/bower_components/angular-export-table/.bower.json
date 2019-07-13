@@ -1,0 +1,52 @@
+{
+  "name": "angular-export-table",
+  "authors": [
+    "epotignano <epotignano@gmail.com>"
+  ],
+  "description": "directive that allows us to export HTML tables",
+  "main": [
+    "export/table-export-directive.js",
+    "export/table-export-option-directive.js",
+    "kayalshri-table-export.jquery.plugin-a891806/table-export.js",
+    "kayalshri-table-export.jquery.plugin-a891806/jquery.base64.js",
+    "kayalshri-table-export.jquery.plugin-a891806/html2canvas.js",
+    "kayalshri-table-export.jquery.plugin-a891806/jspdf/jspdf.js",
+    "kayalshri-table-export.jquery.plugin-a891806/jspdf/libs/base64.js",
+    "kayalshri-table-export.jquery.plugin-a891806/jspdf/libs/sprintf.js"
+  ],
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals"
+  ],
+  "keywords": [
+    "Angular",
+    "tables",
+    "HTML",
+    "table",
+    "export"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.4.0",
+    "angular-smart-table": "~2.1.3"
+  },
+  "homepage": "https://github.com/Epotignano/angular-export-table",
+  "_release": "09655f0bb6",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "09655f0bb6c4dc7e3d0f4cd44e5648dbe8312597"
+  },
+  "_source": "https://github.com/Epotignano/angular-export-table.git",
+  "_target": "*",
+  "_originalSource": "angular-export-table",
+  "_direct": true
+}

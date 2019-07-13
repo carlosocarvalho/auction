@@ -1,0 +1,30 @@
+.tabshome .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #fff;
+    /*background-color: #F1C40F !important;*/
+}
+
+.tabshome  .nav-pills > li.active.amarelo > a, .nav-pills > li.active.amarelo > a:hover, .nav-pills > li.active.amarelo > a:focus {
+    color: #fff;
+    background-color: #F1C40F !important;
+}
+
+
+.tabshome .nav > li {
+    float: none;
+    padding: 10px 17px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #666666;
+    text-decoration: none;
+    text-shadow: none;
+    transition: color 0.1s ease-in-out;
+    -o-transition: color 0.1s ease-in-out;
+    -moz-transition: color 0.1s ease-in-out;
+    -webkit-transition: color 0.1s ease-in-out;
+    font-size: 14px;
+    position: relative;
+}
+.tabshome .navbar-default .navbar-nav > li > a {
+    color: #777;
+}
