@@ -27,7 +27,7 @@
     "gm": "*",
     "jsbarcode": "^3.5.7",
     "jsonwebtoken": "^0.3.0",
-    "lodash": "~2.4.1",
+    "lodash": "~4.17.15",
     "mailgun-js": "^0.7.12",
     "method-override": "~1.0.0",
     "module_name": "^1.0.0",
